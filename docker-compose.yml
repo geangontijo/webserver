@@ -2,7 +2,10 @@ version: '3'
 
 services:
   webserver:
-    image: nginx
+    image: nginx:1.13.1-alpine
     ports:
       - "8800:80"
+    deploy:
+      update_config:
+        order: start-first
 
