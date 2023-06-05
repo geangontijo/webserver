@@ -1,6 +1,6 @@
 <?php
 
 echo json_encode([
-    'peteca' => true
+    'peteca' => 'true2'
 ]);
 
