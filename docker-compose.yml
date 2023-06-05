@@ -2,7 +2,7 @@ version: '3.7'
 
 services:
   webserver:
-    image: webserver-php
+    image: geangontijo/webserver-php
     ports:
       - "8800:80"
     deploy:
