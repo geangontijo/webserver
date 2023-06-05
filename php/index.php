@@ -1,3 +1,3 @@
 <?php
 
-echo 'peteca';
+echo 'peteca2';
