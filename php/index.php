@@ -1,4 +1,6 @@
 <?php
 
-echo 'peteca2';
+echo json_encode([
+    'peteca' => true
+]);
 
