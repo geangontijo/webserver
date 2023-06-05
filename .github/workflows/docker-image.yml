@@ -15,4 +15,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build the Docker image
-      run: cd php && docker build . --file Dockerfile --tag geangontijo:latest
+      run: cd php && docker build -t geangontijo/webserver-php:latest .
+    - name: Docker login
+      run: docker login --username ${{ secrets.DOCKER_USERNAME }} --password ${{ secrets.DOCKER_PASSWORD }}
+    - name: Docker push
+      run: docker push geangontijo/webserver-php
